@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QMainWindow &#8212; PyQt5  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="QMenu" href="qmenu.html" />
+    <link rel="prev" title="QDialog" href="qdialog.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="qmenu.html" title="QMenu"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="qdialog.html" title="QDialog"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyQt5  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">QMainWindow</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="qmainwindow">
+<h1>QMainWindow<a class="headerlink" href="#qmainwindow" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="QMainWindow">
+<em class="property">class </em><code class="sig-name descname">QMainWindow</code><a class="headerlink" href="#QMainWindow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="section" id="menu">
+<h2>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python3</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="kn">import</span> <span class="n">QMainWindow</span><span class="p">,</span> <span class="n">QAction</span><span class="p">,</span> <span class="n">qApp</span><span class="p">,</span> <span class="n">QApplication</span>
+<span class="kn">from</span> <span class="nn">PyQt5.QtGui</span> <span class="kn">import</span> <span class="n">QIcon</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">QMainWindow includes a menu bar, a tool bar and a status bar</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="k">class</span> <span class="nc">Menu</span><span class="p">(</span><span class="n">QMainWindow</span><span class="p">):</span>
+
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+    <span class="n">newAct</span> <span class="o">=</span> <span class="n">QAction</span><span class="p">(</span><span class="n">QIcon</span><span class="o">.</span><span class="n">fromTheme</span><span class="p">(</span><span class="s1">&#39;application-new&#39;</span><span class="p">),</span> <span class="s1">&#39;&amp;New&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="n">newAct</span><span class="o">.</span><span class="n">setShortcut</span><span class="p">(</span><span class="s1">&#39;Ctrl+N&#39;</span><span class="p">)</span>
+    <span class="n">newAct</span><span class="o">.</span><span class="n">setStatusTip</span><span class="p">(</span><span class="s1">&#39;New Something&#39;</span><span class="p">)</span>
+    <span class="n">newAct</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">new</span><span class="p">)</span>
+
+    <span class="n">exitAct</span> <span class="o">=</span> <span class="n">QAction</span><span class="p">(</span><span class="n">QIcon</span><span class="o">.</span><span class="n">fromTheme</span><span class="p">(</span><span class="s1">&#39;application-exit&#39;</span><span class="p">),</span> <span class="s1">&#39;&amp;Exit&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="n">exitAct</span><span class="o">.</span><span class="n">setShortcut</span><span class="p">(</span><span class="s1">&#39;Ctrl+Q&#39;</span><span class="p">)</span>
+    <span class="n">exitAct</span><span class="o">.</span><span class="n">setStatusTip</span><span class="p">(</span><span class="s1">&#39;Exit application&#39;</span><span class="p">)</span>
+    <span class="n">exitAct</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">qApp</span><span class="o">.</span><span class="n">quit</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">statusBar</span><span class="p">()</span>
+
+    <span class="n">menubar</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">menuBar</span><span class="p">()</span>
+    <span class="n">fileMenu</span> <span class="o">=</span> <span class="n">menubar</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="s1">&#39;&amp;File&#39;</span><span class="p">)</span>
+    <span class="n">fileMenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">newAct</span><span class="p">)</span>
+    <span class="n">fileMenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">exitAct</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s1">&#39;Menu&#39;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+  <span class="k">def</span> <span class="nf">new</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;New Something&#39;</span><span class="p">)</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+<span class="n">ex</span> <span class="o">=</span> <span class="n">Menu</span><span class="p">()</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="submenu">
+<h2>SubMenu<a class="headerlink" href="#submenu" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">PyQt5.QtWidgets</span> <span class="kn">import</span> <span class="n">QMainWindow</span><span class="p">,</span> <span class="n">QAction</span><span class="p">,</span> <span class="n">QMenu</span><span class="p">,</span> <span class="n">qApp</span><span class="p">,</span> <span class="n">QApplication</span>
+<span class="kn">from</span> <span class="nn">PyQt5.QtGui</span> <span class="kn">import</span> <span class="n">QIcon</span>
+
+<span class="k">class</span> <span class="nc">SubMenu</span><span class="p">(</span><span class="n">QMainWindow</span><span class="p">):</span>
+
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+    <span class="n">menubar</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">menuBar</span><span class="p">()</span>
+    <span class="n">fileMenu</span> <span class="o">=</span> <span class="n">menubar</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="s1">&#39;File&#39;</span><span class="p">)</span>
+
+    <span class="n">newAct</span> <span class="o">=</span> <span class="n">QAction</span><span class="p">(</span><span class="n">QIcon</span><span class="o">.</span><span class="n">fromTheme</span><span class="p">(</span><span class="s1">&#39;document-new&#39;</span><span class="p">),</span> <span class="s1">&#39;&amp;New&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="n">newAct</span><span class="o">.</span><span class="n">setShortcut</span><span class="p">(</span><span class="s1">&#39;Ctrl+N&#39;</span><span class="p">)</span>
+    <span class="n">newAct</span><span class="o">.</span><span class="n">setStatusTip</span><span class="p">(</span><span class="s1">&#39;New Something&#39;</span><span class="p">)</span>
+    <span class="n">newAct</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">new</span><span class="p">)</span>
+
+    <span class="n">exitAct</span> <span class="o">=</span> <span class="n">QAction</span><span class="p">(</span><span class="n">QIcon</span><span class="o">.</span><span class="n">fromTheme</span><span class="p">(</span><span class="s1">&#39;application-exit&#39;</span><span class="p">),</span> <span class="s1">&#39;&amp;Exit&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="n">exitAct</span><span class="o">.</span><span class="n">setShortcut</span><span class="p">(</span><span class="s1">&#39;Ctrl+Q&#39;</span><span class="p">)</span>
+    <span class="n">exitAct</span><span class="o">.</span><span class="n">setStatusTip</span><span class="p">(</span><span class="s1">&#39;Exit application&#39;</span><span class="p">)</span>
+    <span class="n">exitAct</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">qApp</span><span class="o">.</span><span class="n">quit</span><span class="p">)</span>
+
+    <span class="n">mailMenu</span> <span class="o">=</span> <span class="n">QMenu</span><span class="p">(</span><span class="s1">&#39;Mail&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="n">mailAct</span> <span class="o">=</span> <span class="n">QAction</span><span class="p">(</span><span class="n">QIcon</span><span class="o">.</span><span class="n">fromTheme</span><span class="p">(</span><span class="s1">&#39;mail-send-receive&#39;</span><span class="p">),</span><span class="s1">&#39;Import mail&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="n">mailMenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">mailAct</span><span class="p">)</span>
+    <span class="n">mailAct</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getMail</span><span class="p">)</span>
+
+
+    <span class="n">fileMenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">newAct</span><span class="p">)</span>
+    <span class="n">fileMenu</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="n">mailMenu</span><span class="p">)</span>
+    <span class="n">fileMenu</span><span class="o">.</span><span class="n">addAction</span><span class="p">(</span><span class="n">exitAct</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s1">&#39;Submenu&#39;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+  <span class="k">def</span> <span class="nf">new</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;New Something&#39;</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">getMail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Getting Mail&#39;</span><span class="p">)</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+<span class="n">ex</span> <span class="o">=</span> <span class="n">SubMenu</span><span class="p">()</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">QMainWindow</a><ul>
+<li><a class="reference internal" href="#menu">Menu</a></li>
+<li><a class="reference internal" href="#submenu">SubMenu</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="qdialog.html"
+                        title="previous chapter">QDialog</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="qmenu.html"
+                        title="next chapter">QMenu</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/qmainwindow.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="qmenu.html" title="QMenu"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="qdialog.html" title="QDialog"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyQt5  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">QMainWindow</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, John Thornton.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

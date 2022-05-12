@@ -1,0 +1,1234 @@
+https://doc.qt.io/qt-5/qtcore-module.html
+
+Namespaces
+
+Qt
+	
+
+Contains miscellaneous identifiers used throughout the Qt library
+Classes
+
+QAbstractAnimation
+	
+
+The base of all animations
+
+QAbstractEventDispatcher
+	
+
+Interface to manage Qt's event queue
+
+QAbstractEventDispatcher::TimerInfo
+
+QAbstractItemModel
+	
+
+The abstract interface for item model classes
+
+QAbstractListModel
+	
+
+Abstract model that can be subclassed to create one-dimensional list models
+
+QAbstractNativeEventFilter
+	
+
+Interface for receiving native events, such as MSG or XCB event structs
+
+QAbstractProxyModel
+	
+
+Base class for proxy item models that can do sorting, filtering or other data processing tasks
+
+QAbstractState
+	
+
+The base class of states of a QStateMachine
+
+QAbstractTableModel
+	
+
+Abstract model that can be subclassed to create table models
+
+QAbstractTransition
+	
+
+The base class of transitions between QAbstractState objects
+
+QAnimationGroup
+	
+
+Abstract base class for groups of animations
+
+QAssociativeIterable
+	
+
+Iterable interface for an associative container in a QVariant
+
+QAtomicInt
+	
+
+Platform-independent atomic operations on int
+
+QAtomicInteger
+	
+
+Platform-independent atomic operations on integers
+
+QAtomicPointer
+	
+
+Template class that provides platform-independent atomic operations on pointers
+
+QBEInteger
+	
+
+Platform-independent big-endian integers
+
+QBasicTimer
+	
+
+Timer events for objects
+
+QBitArray
+	
+
+Array of bits
+
+QBuffer
+	
+
+QIODevice interface for a QByteArray
+
+QByteArray
+	
+
+Array of bytes
+
+QByteArray::FromBase64Result
+	
+
+QByteArray::FromBase64Result class holds the result of a call to QByteArray::fromBase64Encoding
+
+QByteArrayList
+	
+
+List of byte arrays
+
+QByteArrayMatcher
+	
+
+Holds a sequence of bytes that can be quickly matched in a byte array
+
+QCache
+	
+
+Template class that provides a cache
+
+QCalendar
+	
+
+Describes calendar systems
+
+QCborArray
+	
+
+Used to hold an array of CBOR elements
+
+QCborError
+	
+
+Holds the error condition found while parsing or validating a CBOR stream
+
+QCborMap
+	
+
+Used to hold an associative container representable in CBOR
+
+QCborMap::ConstIterator
+	
+
+QCborMap::ConstIterator class provides an STL-style const iterator for QCborMap
+
+QCborMap::Iterator
+	
+
+QCborMap::Iterator class provides an STL-style non-const iterator for QCborMap
+
+QCborParserError
+	
+
+Used by QCborValue to report a parsing error
+
+QCborStreamReader
+	
+
+Simple CBOR stream decoder, operating on either a QByteArray or QIODevice
+
+QCborStreamReader::StringResult
+
+QCborStreamWriter
+	
+
+Simple CBOR encoder operating on a one-way stream
+
+QCborValue
+	
+
+Encapsulates a value in CBOR
+
+QChar
+	
+
+16-bit Unicode character
+
+QChildEvent
+	
+
+Contains event parameters for child object events
+
+QCollator
+	
+
+Compares strings according to a localized collation algorithm
+
+QCollatorSortKey
+	
+
+Can be used to speed up string collation
+
+QCommandLineOption
+	
+
+Defines a possible command-line option
+
+QCommandLineParser
+	
+
+Means for handling the command line options
+
+QConcatenateTablesProxyModel
+	
+
+Proxies multiple source models, concatenating their rows
+
+QContiguousCache
+	
+
+Template class that provides a contiguous cache
+
+QCoreApplication
+	
+
+Event loop for Qt applications without UI
+
+QCryptographicHash
+	
+
+Way to generate cryptographic hashes
+
+QDataStream
+	
+
+Serialization of binary data to a QIODevice
+
+QDate
+	
+
+Date functions
+
+QDateTime
+	
+
+Date and time functions
+
+QDeadlineTimer
+	
+
+Marks a deadline in the future
+
+QDebug
+	
+
+Output stream for debugging information
+
+QDebugStateSaver
+	
+
+Convenience class for custom QDebug operators
+
+QDir
+	
+
+Access to directory structures and their contents
+
+QDirIterator
+	
+
+Iterator for directory entrylists
+
+QDynamicPropertyChangeEvent
+	
+
+Contains event parameters for dynamic property change events
+
+QEasingCurve
+	
+
+Easing curves for controlling animation
+
+QElapsedTimer
+	
+
+Fast way to calculate elapsed times
+
+QEnableSharedFromThis
+	
+
+A base class that allows obtaining a QSharedPointer for an object already managed by a shared pointer
+
+QEvent
+	
+
+The base class of all event classes. Event objects contain event parameters
+
+QEventLoop
+	
+
+Means of entering and leaving an event loop
+
+QEventLoopLocker
+	
+
+Means to quit an event loop when it is no longer needed
+
+QEventTransition
+	
+
+QObject-specific transition for Qt events
+
+QException
+	
+
+Base class for exceptions that can transferred across threads
+
+QExplicitlySharedDataPointer
+	
+
+Represents a pointer to an explicitly shared object
+
+QFile
+	
+
+Interface for reading from and writing to files
+
+QFileDevice
+	
+
+Interface for reading from and writing to open files
+
+QFileInfo
+	
+
+System-independent file information
+
+QFileSelector
+	
+
+Convenient way of selecting file variants
+
+QFileSystemWatcher
+	
+
+Interface for monitoring files and directories for modifications
+
+QFinalState
+	
+
+Final state
+
+QFlag
+	
+
+Helper data type for QFlags
+
+QFlags
+	
+
+Type-safe way of storing OR-combinations of enum values
+
+QFuture
+	
+
+Represents the result of an asynchronous computation
+
+QFutureIterator
+	
+
+Java-style const iterator for QFuture
+
+QFutureSynchronizer
+	
+
+Convenience class that simplifies QFuture synchronization
+
+QFutureWatcher
+	
+
+Allows monitoring a QFuture using signals and slots
+
+QGenericArgument
+	
+
+Internal helper class for marshalling arguments
+
+QGenericReturnArgument
+	
+
+Internal helper class for marshalling arguments
+
+QGlobalStatic
+	
+
+Used to implement a global static object
+
+QGregorianCalendar
+	
+
+Implements the Gregorian calendar
+
+QHash
+	
+
+Template class that provides a hash-table-based dictionary
+
+QHashIterator
+	
+
+Java-style const iterator for QHash and QMultiHash
+
+QHistoryState
+	
+
+Means of returning to a previously active substate
+
+QIODevice
+	
+
+The base interface class of all I/O devices in Qt
+
+QIdentityProxyModel
+	
+
+Proxies its source model unmodified
+
+QItemSelection
+	
+
+Manages information about selected items in a model
+
+QItemSelectionModel
+	
+
+Keeps track of a view's selected items
+
+QItemSelectionRange
+	
+
+Manages information about a range of selected items in a model
+
+QJalaliCalendar
+	
+
+Jalali (Hijri Shamsi) calendar system implementation
+
+QJsonArray
+	
+
+Encapsulates a JSON array
+
+QJsonDocument
+	
+
+Way to read and write JSON documents
+
+QJsonObject
+	
+
+Encapsulates a JSON object
+
+QJsonParseError
+	
+
+Used to report errors during JSON parsing
+
+QJsonValue
+	
+
+Encapsulates a value in JSON
+
+QJulianCalendar
+	
+
+Julian calendar system implementation
+
+QKeyValueIterator
+	
+
+Iterator over the key/value pairs of an associative container
+
+QLEInteger
+	
+
+Platform-independent little-endian integers
+
+QLatin1Char
+	
+
+8-bit ASCII/Latin-1 character
+
+QLatin1String
+	
+
+Thin wrapper around an US-ASCII/Latin-1 encoded string literal
+
+QLibrary
+	
+
+Loads shared libraries at runtime
+
+QLibraryInfo
+	
+
+Information about the Qt library
+
+QLine
+	
+
+Two-dimensional vector using integer precision
+
+QLineF
+	
+
+Two-dimensional vector using floating point precision
+
+QList
+	
+
+Template class that provides lists
+
+QListIterator
+	
+
+Java-style const iterator for QList and QQueue
+
+QLocale
+	
+
+Converts between numbers and their string representations in various languages
+
+QLockFile
+	
+
+Locking between processes using a file
+
+QLoggingCategory
+	
+
+Represents a category, or 'area' in the logging infrastructure
+
+QMap
+	
+
+Template class that provides a red-black-tree-based dictionary
+
+QMap::key_iterator
+	
+
+QMap::key_iterator class provides an STL-style const iterator for QMap and QMultiMap keys
+
+QMapIterator
+	
+
+Java-style const iterator for QMap and QMultiMap
+
+QMargins
+	
+
+Defines the four margins of a rectangle
+
+QMarginsF
+	
+
+Defines the four margins of a rectangle
+
+QMessageAuthenticationCode
+	
+
+Way to generate hash-based message authentication codes
+
+QMessageLogContext
+	
+
+Additional information about a log message
+
+QMessageLogger
+	
+
+Generates log messages
+
+QMetaClassInfo
+	
+
+Additional information about a class
+
+QMetaEnum
+	
+
+Meta-data about an enumerator
+
+QMetaMethod
+	
+
+Meta-data about a member function
+
+QMetaObject
+	
+
+Contains meta-information about Qt objects
+
+QMetaObject::Connection
+
+QMetaProperty
+	
+
+Meta-data about a property
+
+QMetaType
+	
+
+Manages named types in the meta-object system
+
+QMilankovicCalendar
+	
+
+Milanković calendar system implementation
+
+QMimeData
+	
+
+Container for data that records information about its MIME type
+
+QMimeDatabase
+	
+
+Maintains a database of MIME types
+
+QMimeType
+	
+
+Describes types of file or data, represented by a MIME type string
+
+QModelIndex
+	
+
+Used to locate data in a data model
+
+QMultiHash
+	
+
+Convenience QHash subclass that provides multi-valued hashes
+
+QMultiMap
+	
+
+Convenience QMap subclass that provides multi-valued maps
+
+QMutableHashIterator
+	
+
+Java-style non-const iterator for QHash and QMultiHash
+
+QMutableListIterator
+	
+
+Java-style non-const iterator for QList and QQueue
+
+QMutableMapIterator
+	
+
+Java-style non-const iterator for QMap and QMultiMap
+
+QMutableSetIterator
+	
+
+Java-style non-const iterator for QSet
+
+QMutableVectorIterator
+	
+
+Java-style non-const iterator for QVector and QStack
+
+QMutex
+	
+
+Access serialization between threads
+
+QMutexLocker
+	
+
+Convenience class that simplifies locking and unlocking mutexes
+
+QObject
+	
+
+The base class of all Qt objects
+
+QObjectCleanupHandler
+	
+
+Watches the lifetime of multiple QObjects
+
+QOperatingSystemVersion
+	
+
+Information about the operating system version
+
+QPair
+	
+
+Template class that stores a pair of items
+
+QParallelAnimationGroup
+	
+
+Parallel group of animations
+
+QPauseAnimation
+	
+
+Pause for QSequentialAnimationGroup
+
+QPersistentModelIndex
+	
+
+Used to locate data in a data model
+
+QPluginLoader
+	
+
+Loads a plugin at run-time
+
+QPoint
+	
+
+Defines a point in the plane using integer precision
+
+QPointF
+	
+
+Defines a point in the plane using floating point precision
+
+QPointer
+	
+
+Template class that provides guarded pointers to QObject
+
+QProcess
+	
+
+Used to start external programs and to communicate with them
+
+QProcess::CreateProcessArguments
+
+QProcessEnvironment
+	
+
+Holds the environment variables that can be passed to a program
+
+QPropertyAnimation
+	
+
+Animates Qt properties
+
+QQueue
+	
+
+Generic container that provides a queue
+
+QRandomGenerator
+	
+
+Allows one to obtain random values from a high-quality Random Number Generator
+
+QRandomGenerator64
+	
+
+Allows one to obtain 64-bit random values from a high-quality, seed-less Random Number Generator
+
+QReadLocker
+	
+
+Convenience class that simplifies locking and unlocking read-write locks for read access
+
+QReadWriteLock
+	
+
+Read-write locking
+
+QRect
+	
+
+Defines a rectangle in the plane using integer precision
+
+QRectF
+	
+
+Defines a rectangle in the plane using floating point precision
+
+QRecursiveMutex
+	
+
+Access serialization between threads
+
+QRegExp
+	
+
+Pattern matching using regular expressions
+
+QRegularExpression
+	
+
+Pattern matching using regular expressions
+
+QRegularExpressionMatch
+	
+
+The results of a matching a QRegularExpression against a string
+
+QRegularExpressionMatchIterator
+	
+
+Iterator on the results of a global match of a QRegularExpression object against a string
+
+QResource
+	
+
+Interface for reading directly from resources
+
+QRomanCalendar
+	
+
+Shared base for calendars based on the ancient Roman calendar
+
+QRunnable
+	
+
+The base class for all runnable objects
+
+QSaveFile
+	
+
+Interface for safely writing to files
+
+QScopeGuard
+	
+
+Provides a scope guard for calling a function at the end of a scope
+
+QScopedArrayPointer
+	
+
+Stores a pointer to a dynamically allocated array of objects, and deletes it upon destruction
+
+QScopedPointer
+	
+
+Stores a pointer to a dynamically allocated object, and deletes it upon destruction
+
+QScopedValueRollback
+	
+
+Resets a variable to its previous value on destruction
+
+QSemaphore
+	
+
+General counting semaphore
+
+QSemaphoreReleaser
+	
+
+Exception-safe deferral of a QSemaphore::release() call
+
+QSequentialAnimationGroup
+	
+
+Sequential group of animations
+
+QSequentialIterable
+	
+
+Iterable interface for a container in a QVariant
+
+QSet
+	
+
+Template class that provides a hash-table-based set
+
+QSet::const_iterator
+	
+
+QSet::const_iterator class provides an STL-style const iterator for QSet
+
+QSet::iterator
+	
+
+QSet::iterator class provides an STL-style non-const iterator for QSet
+
+QSetIterator
+	
+
+Java-style const iterator for QSet
+
+QSettings
+	
+
+Persistent platform-independent application settings
+
+QSharedData
+	
+
+Base class for shared data objects
+
+QSharedDataPointer
+	
+
+Represents a pointer to an implicitly shared object
+
+QSharedMemory
+	
+
+Access to a shared memory segment
+
+QSharedPointer
+	
+
+Holds a strong reference to a shared pointer
+
+QSignalBlocker
+	
+
+Exception-safe wrapper around QObject::blockSignals()
+
+QSignalMapper
+	
+
+Bundles signals from identifiable senders
+
+QSignalTransition
+	
+
+Transition based on a Qt signal
+
+QSize
+	
+
+Defines the size of a two-dimensional object using integer point precision
+
+QSizeF
+	
+
+Defines the size of a two-dimensional object using floating point precision
+
+QSocketNotifier
+	
+
+Support for monitoring activity on a file descriptor
+
+QSortFilterProxyModel
+	
+
+Support for sorting and filtering data passed between another model and a view
+
+QStack
+	
+
+Template class that provides a stack
+
+QStandardPaths
+	
+
+Methods for accessing standard paths
+
+QState
+	
+
+General-purpose state for QStateMachine
+
+QStateMachine
+	
+
+Hierarchical finite state machine
+
+QStateMachine::SignalEvent
+	
+
+Represents a Qt signal event
+
+QStateMachine::WrappedEvent
+	
+
+Inherits QEvent and holds a clone of an event associated with a QObject
+
+QStaticByteArrayMatcher
+	
+
+Compile-time version of QByteArrayMatcher
+
+QStaticPlugin
+	
+
+Struct containing a reference to a static plugin instance together with its meta data
+
+QStorageInfo
+	
+
+Provides information about currently mounted storage and drives
+
+QString
+	
+
+Unicode character string
+
+QStringList
+	
+
+List of strings
+
+QStringListModel
+	
+
+Model that supplies strings to views
+
+QStringMatcher
+	
+
+Holds a sequence of characters that can be quickly matched in a Unicode string
+
+QStringRef
+	
+
+Thin wrapper around QString substrings
+
+QStringView
+	
+
+Unified view on UTF-16 strings with a read-only subset of the QString API
+
+QSysInfo
+	
+
+Information about the system
+
+QSystemSemaphore
+	
+
+General counting system semaphore
+
+QTemporaryDir
+	
+
+Creates a unique directory for temporary use
+
+QTemporaryFile
+	
+
+I/O device that operates on temporary files
+
+QTextBoundaryFinder
+	
+
+Way of finding Unicode text boundaries in a string
+
+QTextCodec
+	
+
+Conversions between text encodings
+
+QTextDecoder
+	
+
+State-based decoder
+
+QTextEncoder
+	
+
+State-based encoder
+
+QTextStream
+	
+
+Convenient interface for reading and writing text
+
+QThread
+	
+
+Platform-independent way to manage threads
+
+QThreadPool
+	
+
+Manages a collection of QThreads
+
+QThreadStorage
+	
+
+Per-thread data storage
+
+QTime
+	
+
+Clock time functions
+
+QTimeLine
+	
+
+Timeline for controlling animations
+
+QTimeZone
+	
+
+Converts between UTC and local time in a specific time zone
+
+QTimeZone::OffsetData
+
+QTimer
+	
+
+Repetitive and single-shot timers
+
+QTimerEvent
+	
+
+Contains parameters that describe a timer event
+
+QTranslator
+	
+
+Internationalization support for text output
+
+QUnhandledException
+	
+
+UnhandledException class represents an unhandled exception in a worker thread
+
+QUrl
+	
+
+Convenient interface for working with URLs
+
+QUrlQuery
+	
+
+Way to manipulate a key-value pairs in a URL's query
+
+QUuid
+	
+
+Stores a Universally Unique Identifier (UUID)
+
+QVarLengthArray
+	
+
+Low-level variable-length array
+
+QVariant
+	
+
+Acts like a union for the most common Qt data types
+
+QVariantAnimation
+	
+
+Base class for animations
+
+QVector
+	
+
+Template class that provides a dynamic array
+
+QVectorIterator
+	
+
+Java-style const iterator for QVector and QStack
+
+QVersionNumber
+	
+
+Contains a version number with an arbitrary number of segments
+
+QWaitCondition
+	
+
+Condition variable for synchronizing threads
+
+QWeakPointer
+	
+
+Holds a weak reference to a shared pointer
+
+QWinEventNotifier
+	
+
+Support for the Windows Wait functions
+
+QWriteLocker
+	
+
+Convenience class that simplifies locking and unlocking read-write locks for write access
+
+QXmlStreamAttribute
+	
+
+Represents a single XML attribute
+
+QXmlStreamAttributes
+	
+
+Represents a vector of QXmlStreamAttribute
+
+QXmlStreamEntityDeclaration
+	
+
+Represents a DTD entity declaration
+
+QXmlStreamEntityResolver
+	
+
+Entity resolver for a QXmlStreamReader
+
+QXmlStreamNamespaceDeclaration
+	
+
+Represents a namespace declaration
+
+QXmlStreamNotationDeclaration
+	
+
+Represents a DTD notation declaration
+
+QXmlStreamReader
+	
+
+Fast parser for reading well-formed XML via a simple streaming API
+
+QXmlStreamWriter
+	
+
+XML writer with a simple streaming API
+
+qfloat16
+	
+
+Provides 16-bit floating point support

@@ -1,0 +1,7 @@
+pyuic5 translate.ui -o translate_ui.py
+
+pylupdate5 translate_ui.py  -ts eng-de.ts
+
+Open eng-de.ts with QT Linguist and translate.
+
+lrelease eng-de.ts eng-de.qm

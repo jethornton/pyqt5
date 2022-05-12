@@ -1,0 +1,3 @@
+pyuic5 -o trans_ui.py trans.ui
+pylupdate5 trans_ui.py -ts eng-de.ts
+lrelease eng-de.ts eng-de.qm

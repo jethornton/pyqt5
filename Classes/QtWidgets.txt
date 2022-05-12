@@ -1,0 +1,1008 @@
+https://doc.qt.io/qt-5/qtwidgets-module.html
+
+Classes
+
+QAbstractButton
+	
+
+The abstract base class of button widgets, providing functionality common to buttons
+
+QAbstractGraphicsShapeItem
+	
+
+Common base for all path items
+
+QAbstractItemDelegate
+	
+
+Used to display and edit data items from a model
+
+QAbstractItemView
+	
+
+The basic functionality for item view classes
+
+QAbstractScrollArea
+	
+
+Scrolling area with on-demand scroll bars
+
+QAbstractSlider
+	
+
+Integer value within a range
+
+QAbstractSpinBox
+	
+
+Spinbox and a line edit to display values
+
+QAccessibleWidget
+	
+
+Implements the QAccessibleInterface for QWidgets
+
+QAction
+	
+
+Abstract user interface action that can be inserted into widgets
+
+QActionGroup
+	
+
+Groups actions together
+
+QApplication
+	
+
+Manages the GUI application's control flow and main settings
+
+QBoxLayout
+	
+
+Lines up child widgets horizontally or vertically
+
+QButtonGroup
+	
+
+Container to organize groups of button widgets
+
+QCalendarWidget
+	
+
+Monthly based calendar widget allowing the user to select a date
+
+QCheckBox
+	
+
+Checkbox with a text label
+
+QColorDialog
+	
+
+Dialog widget for specifying colors
+
+QColormap
+	
+
+Maps device independent QColors to device dependent pixel values
+
+QColumnView
+	
+
+Model/view implementation of a column view
+
+QComboBox
+	
+
+Combined button and popup list
+
+QCommandLinkButton
+	
+
+Vista style command link button
+
+QCommonStyle
+	
+
+Encapsulates the common Look and Feel of a GUI
+
+QCompleter
+	
+
+Completions based on an item model
+
+QDataWidgetMapper
+	
+
+Mapping between a section of a data model to widgets
+
+QDateEdit
+	
+
+Widget for editing dates based on the QDateTimeEdit widget
+
+QDateTimeEdit
+	
+
+Widget for editing dates and times
+
+QDial
+	
+
+Rounded range control (like a speedometer or potentiometer)
+
+QDialog
+	
+
+The base class of dialog windows
+
+QDialogButtonBox
+	
+
+Widget that presents buttons in a layout that is appropriate to the current widget style
+
+QDockWidget
+	
+
+Widget that can be docked inside a QMainWindow or floated as a top-level window on the desktop
+
+QDoubleSpinBox
+	
+
+Spin box widget that takes doubles
+
+QErrorMessage
+	
+
+Error message display dialog
+
+QFileDialog
+	
+
+Dialog that allow users to select files or directories
+
+QFileIconProvider
+	
+
+File icons for the QDirModel and the QFileSystemModel classes
+
+QFileSystemModel
+	
+
+Data model for the local filesystem
+
+QFocusFrame
+	
+
+Focus frame which can be outside of a widget's normal paintable area
+
+QFontComboBox
+	
+
+Combobox that lets the user select a font family
+
+QFontDialog
+	
+
+Dialog widget for selecting a font
+
+QFormLayout
+	
+
+Manages forms of input widgets and their associated labels
+
+QFormLayout::TakeRowResult
+	
+
+Contains the result of a QFormLayout::takeRow() call
+
+QFrame
+	
+
+The base class of widgets that can have a frame
+
+QGesture
+	
+
+Represents a gesture, containing properties that describe the corresponding user input
+
+QGestureEvent
+	
+
+The description of triggered gestures
+
+QGestureRecognizer
+	
+
+The infrastructure for gesture recognition
+
+QGraphicsAnchor
+	
+
+Represents an anchor between two items in a QGraphicsAnchorLayout
+
+QGraphicsAnchorLayout
+	
+
+Layout where one can anchor widgets together in Graphics View
+
+QGraphicsBlurEffect
+	
+
+Blur effect
+
+QGraphicsColorizeEffect
+	
+
+Colorize effect
+
+QGraphicsDropShadowEffect
+	
+
+Drop shadow effect
+
+QGraphicsEffect
+	
+
+The base class for all graphics effects
+
+QGraphicsEllipseItem
+	
+
+Ellipse item that you can add to a QGraphicsScene
+
+QGraphicsGridLayout
+	
+
+Grid layout for managing widgets in Graphics View
+
+QGraphicsItem
+	
+
+The base class for all graphical items in a QGraphicsScene
+
+QGraphicsItemGroup
+	
+
+Container that treats a group of items as a single item
+
+QGraphicsLayout
+	
+
+The base class for all layouts in Graphics View
+
+QGraphicsLayoutItem
+	
+
+Can be inherited to allow your custom items to be managed by layouts
+
+QGraphicsLineItem
+	
+
+Line item that you can add to a QGraphicsScene
+
+QGraphicsLinearLayout
+	
+
+Horizontal or vertical layout for managing widgets in Graphics View
+
+QGraphicsObject
+	
+
+Base class for all graphics items that require signals, slots and properties
+
+QGraphicsOpacityEffect
+	
+
+Opacity effect
+
+QGraphicsPathItem
+	
+
+Path item that you can add to a QGraphicsScene
+
+QGraphicsPixmapItem
+	
+
+Pixmap item that you can add to a QGraphicsScene
+
+QGraphicsPolygonItem
+	
+
+Polygon item that you can add to a QGraphicsScene
+
+QGraphicsProxyWidget
+	
+
+Proxy layer for embedding a QWidget in a QGraphicsScene
+
+QGraphicsRectItem
+	
+
+Rectangle item that you can add to a QGraphicsScene
+
+QGraphicsRotation
+	
+
+Rotation transformation around a given axis
+
+QGraphicsScale
+	
+
+Scale transformation
+
+QGraphicsScene
+	
+
+Surface for managing a large number of 2D graphical items
+
+QGraphicsSceneContextMenuEvent
+	
+
+Context menu events in the graphics view framework
+
+QGraphicsSceneDragDropEvent
+	
+
+Events for drag and drop in the graphics view framework
+
+QGraphicsSceneEvent
+	
+
+Base class for all graphics view related events
+
+QGraphicsSceneHelpEvent
+	
+
+Events when a tooltip is requested
+
+QGraphicsSceneHoverEvent
+	
+
+Hover events in the graphics view framework
+
+QGraphicsSceneMouseEvent
+	
+
+Mouse events in the graphics view framework
+
+QGraphicsSceneMoveEvent
+	
+
+Events for widget moving in the graphics view framework
+
+QGraphicsSceneResizeEvent
+	
+
+Events for widget resizing in the graphics view framework
+
+QGraphicsSceneWheelEvent
+	
+
+Wheel events in the graphics view framework
+
+QGraphicsSimpleTextItem
+	
+
+Simple text path item that you can add to a QGraphicsScene
+
+QGraphicsTextItem
+	
+
+Text item that you can add to a QGraphicsScene to display formatted text
+
+QGraphicsTransform
+	
+
+Abstract base class for building advanced transformations on QGraphicsItems
+
+QGraphicsView
+	
+
+Widget for displaying the contents of a QGraphicsScene
+
+QGraphicsWidget
+	
+
+The base class for all widget items in a QGraphicsScene
+
+QGridLayout
+	
+
+Lays out widgets in a grid
+
+QGroupBox
+	
+
+Group box frame with a title
+
+QHBoxLayout
+	
+
+Lines up widgets horizontally
+
+QHeaderView
+	
+
+Header row or header column for item views
+
+QInputDialog
+	
+
+Simple convenience dialog to get a single value from the user
+
+QItemDelegate
+	
+
+Display and editing facilities for data items from a model
+
+QItemEditorCreator
+	
+
+Makes it possible to create item editor creator bases without subclassing QItemEditorCreatorBase
+
+QItemEditorCreatorBase
+	
+
+Abstract base class that must be subclassed when implementing new item editor creators
+
+QItemEditorFactory
+	
+
+Widgets for editing item data in views and delegates
+
+QKeyEventTransition
+	
+
+Transition for key events
+
+QKeySequenceEdit
+	
+
+Allows to input a QKeySequence
+
+QLCDNumber
+	
+
+Displays a number with LCD-like digits
+
+QLabel
+	
+
+Text or image display
+
+QLayout
+	
+
+The base class of geometry managers
+
+QLayoutItem
+	
+
+Abstract item that a QLayout manipulates
+
+QLineEdit
+	
+
+One-line text editor
+
+QListView
+	
+
+List or icon view onto a model
+
+QListWidget
+	
+
+Item-based list widget
+
+QListWidgetItem
+	
+
+Item for use with the QListWidget item view class
+
+QMainWindow
+	
+
+Main application window
+
+QMdiArea
+	
+
+Area in which MDI windows are displayed
+
+QMdiSubWindow
+	
+
+Subwindow class for QMdiArea
+
+QMenu
+	
+
+Menu widget for use in menu bars, context menus, and other popup menus
+
+QMenuBar
+	
+
+Horizontal menu bar
+
+QMessageBox
+	
+
+Modal dialog for informing the user or for asking the user a question and receiving an answer
+
+QMouseEventTransition
+	
+
+Transition for mouse events
+
+QOpenGLWidget
+	
+
+Widget for rendering OpenGL graphics
+
+QPanGesture
+	
+
+Describes a panning gesture made by the user
+
+QPinchGesture
+	
+
+Describes a pinch gesture made by the user
+
+QPlainTextDocumentLayout
+	
+
+Implements a plain text layout for QTextDocument
+
+QPlainTextEdit
+	
+
+Widget that is used to edit and display plain text
+
+QProgressBar
+	
+
+Horizontal or vertical progress bar
+
+QProgressDialog
+	
+
+Feedback on the progress of a slow operation
+
+QProxyStyle
+	
+
+Convenience class that simplifies dynamically overriding QStyle elements
+
+QPushButton
+	
+
+Command button
+
+QRadioButton
+	
+
+Radio button with a text label
+
+QRubberBand
+	
+
+Rectangle or line that can indicate a selection or a boundary
+
+QScrollArea
+	
+
+Scrolling view onto another widget
+
+QScrollBar
+	
+
+Vertical or horizontal scroll bar
+
+QScroller
+	
+
+Enables kinetic scrolling for any scrolling widget or graphics item
+
+QScrollerProperties
+	
+
+Stores the settings for a QScroller
+
+QShortcut
+	
+
+Used to create keyboard shortcuts
+
+QSizeGrip
+	
+
+Resize handle for resizing top-level windows
+
+QSizePolicy
+	
+
+Layout attribute describing horizontal and vertical resizing policy
+
+QSlider
+	
+
+Vertical or horizontal slider
+
+QSpacerItem
+	
+
+Blank space in a layout
+
+QSpinBox
+	
+
+Spin box widget
+
+QSplashScreen
+	
+
+Splash screen that can be shown during application startup
+
+QSplitter
+	
+
+Implements a splitter widget
+
+QSplitterHandle
+	
+
+Handle functionality for the splitter
+
+QStackedLayout
+	
+
+Stack of widgets where only one widget is visible at a time
+
+QStackedWidget
+	
+
+Stack of widgets where only one widget is visible at a time
+
+QStandardItemEditorCreator
+	
+
+The possibility to register widgets without having to subclass QItemEditorCreatorBase
+
+QStatusBar
+	
+
+Horizontal bar suitable for presenting status information
+
+QStyle
+	
+
+Abstract base class that encapsulates the look and feel of a GUI
+
+QStyleFactory
+	
+
+Creates QStyle objects
+
+QStyleHintReturn
+	
+
+Style hints that return more than basic data types
+
+QStyleHintReturnMask
+	
+
+Style hints that return a QRegion
+
+QStyleHintReturnVariant
+	
+
+Style hints that return a QVariant
+
+QStyleOption
+	
+
+Stores the parameters used by QStyle functions
+
+QStyleOptionButton
+	
+
+Used to describe the parameters for drawing buttons
+
+QStyleOptionComboBox
+	
+
+Used to describe the parameter for drawing a combobox
+
+QStyleOptionComplex
+	
+
+Used to hold parameters that are common to all complex controls
+
+QStyleOptionDockWidget
+	
+
+Used to describe the parameters for drawing a dock widget
+
+QStyleOptionFocusRect
+	
+
+Used to describe the parameters for drawing a focus rectangle with QStyle
+
+QStyleOptionFrame
+	
+
+Used to describe the parameters for drawing a frame
+
+QStyleOptionGraphicsItem
+	
+
+Used to describe the parameters needed to draw a QGraphicsItem
+
+QStyleOptionGroupBox
+	
+
+Describes the parameters for drawing a group box
+
+QStyleOptionHeader
+	
+
+Used to describe the parameters for drawing a header
+
+QStyleOptionMenuItem
+	
+
+Used to describe the parameter necessary for drawing a menu item
+
+QStyleOptionProgressBar
+	
+
+Used to describe the parameters necessary for drawing a progress bar
+
+QStyleOptionRubberBand
+	
+
+Used to describe the parameters needed for drawing a rubber band
+
+QStyleOptionSizeGrip
+	
+
+Used to describe the parameter for drawing a size grip
+
+QStyleOptionSlider
+	
+
+Used to describe the parameters needed for drawing a slider
+
+QStyleOptionSpinBox
+	
+
+Used to describe the parameters necessary for drawing a spin box
+
+QStyleOptionTab
+	
+
+Used to describe the parameters for drawing a tab bar
+
+QStyleOptionTabBarBase
+	
+
+Used to describe the base of a tab bar, i.e. the part that the tab bar usually overlaps with
+
+QStyleOptionTabWidgetFrame
+	
+
+Used to describe the parameters for drawing the frame around a tab widget
+
+QStyleOptionTitleBar
+	
+
+Used to describe the parameters for drawing a title bar
+
+QStyleOptionToolBar
+	
+
+Used to describe the parameters for drawing a toolbar
+
+QStyleOptionToolBox
+	
+
+Used to describe the parameters needed for drawing a tool box
+
+QStyleOptionToolButton
+	
+
+Used to describe the parameters for drawing a tool button
+
+QStyleOptionViewItem
+	
+
+Used to describe the parameters used to draw an item in a view widget
+
+QStylePainter
+	
+
+Convenience class for drawing QStyle elements inside a widget
+
+QStylePlugin
+	
+
+Abstract base for custom QStyle plugins
+
+QStyledItemDelegate
+	
+
+Display and editing facilities for data items from a model
+
+QSwipeGesture
+	
+
+Describes a swipe gesture made by the user
+
+QSystemTrayIcon
+	
+
+Icon for an application in the system tray
+
+QTabBar
+	
+
+Tab bar, e.g. for use in tabbed dialogs
+
+QTabWidget
+	
+
+Stack of tabbed widgets
+
+QTableView
+	
+
+Default model/view implementation of a table view
+
+QTableWidget
+	
+
+Item-based table view with a default model
+
+QTableWidgetItem
+	
+
+Item for use with the QTableWidget class
+
+QTableWidgetSelectionRange
+	
+
+Way to interact with selection in a model without using model indexes and a selection model
+
+QTapAndHoldGesture
+	
+
+Describes a tap-and-hold (aka LongTap) gesture made by the user
+
+QTapGesture
+	
+
+Describes a tap gesture made by the user
+
+QTextBrowser
+	
+
+Rich text browser with hypertext navigation
+
+QTextEdit
+	
+
+Widget that is used to edit and display both plain and rich text
+
+QTextEdit::ExtraSelection
+	
+
+QTextEdit::ExtraSelection structure provides a way of specifying a character format for a given selection in a document
+
+QTileRules
+	
+
+The rules used to draw a pixmap or image split into nine segments
+
+QTimeEdit
+	
+
+Widget for editing times based on the QDateTimeEdit widget
+
+QToolBar
+	
+
+Movable panel that contains a set of controls
+
+QToolBox
+	
+
+Column of tabbed widget items
+
+QToolButton
+	
+
+Quick-access button to commands or options, usually used inside a QToolBar
+
+QToolTip
+	
+
+Tool tips (balloon help) for any widget
+
+QTreeView
+	
+
+Default model/view implementation of a tree view
+
+QTreeWidget
+	
+
+Tree view that uses a predefined tree model
+
+QTreeWidgetItem
+	
+
+Item for use with the QTreeWidget convenience class
+
+QTreeWidgetItemIterator
+	
+
+Way to iterate over the items in a QTreeWidget instance
+
+QUndoCommand
+	
+
+The base class of all commands stored on a QUndoStack
+
+QUndoGroup
+	
+
+Group of QUndoStack objects
+
+QUndoStack
+	
+
+Stack of QUndoCommand objects
+
+QUndoView
+	
+
+Displays the contents of a QUndoStack
+
+QVBoxLayout
+	
+
+Lines up widgets vertically
+
+QWhatsThis
+	
+
+Simple description of any widget, i.e. answering the question "What's This?"
+
+QWidget
+	
+
+The base class of all user interface objects
+
+QWidgetAction
+	
+
+Extends QAction by an interface for inserting custom widgets into action based containers, such as toolbars
+
+QWidgetItem
+	
+
+Layout item that represents a widget
+
+QWizard
+	
+
+Framework for wizards
+
+QWizardPage
+	
+
+The base class for wizard pages

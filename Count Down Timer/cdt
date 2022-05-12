@@ -1,0 +1,79 @@
+#!/usr/bin/python3
+
+import sys
+from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QMainWindow,
+	QVBoxLayout, QPushButton, QSpinBox)
+
+from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtGui import QFont
+
+class Simple(QMainWindow):
+	def __init__(self):
+		super().__init__()
+		self.setGeometry(0, 0, 300, 220)
+		self.setWindowTitle('Count Down Timer')
+		self.setWindowFlags(Qt.WindowStaysOnTopHint)
+		'''
+		create a QWidget and set it as the central widget on the
+		QMainWindow and assign the QLayout to that. 
+		You can't set a QLayout directly on the QMainWindow.
+		'''
+		widget = QWidget()
+
+		vbox = QVBoxLayout()
+		self.durationSB = QSpinBox(self)
+		self.durationSB.setValue(30)
+		self.durationSB.setSuffix(' min')
+		self.durationSB.setFont(QFont('Arial', 20))
+		vbox.addWidget(self.durationSB)
+
+		self.timeLbl = QLabel()
+		self.timeLbl.setAlignment(Qt.AlignCenter)
+		self.timeLbl.setFont(QFont('Arial', 60))
+		vbox.addWidget(self.timeLbl)
+		startBtn = QPushButton("Start")
+		startBtn.setFont(QFont('Arial', 20))
+		startBtn.clicked.connect(self.startTimer)
+		vbox.addWidget(startBtn)
+		quitBtn = QPushButton("Quit")
+		quitBtn.clicked.connect(self.close)
+		quitBtn.setFont(QFont('Arial', 20))
+		vbox.addWidget(quitBtn)
+
+		# set the layout to the widget
+		widget.setLayout(vbox)
+
+		# set the widget as the main window widget
+		self.setCentralWidget(widget)
+		self.ctTimer = QTimer(self)
+		self.ctTimer.timeout.connect(self.updateTime)
+		self.timeLeft = 0
+		self.timeLbl.setText(self.timeStr())
+		self.show()
+
+	def startTimer(self):
+		self.timeLeft = self.durationSB.value() * 60
+		self.timeLbl.setText(self.timeStr())
+		self.ctTimer.start(1000)
+
+	def endTimer(self):
+		self.ctTimer.stop()
+
+	def updateTime(self):
+		if self.timeLeft == 0:
+			self.endTimer()
+			self.timeLbl.setText('Done')
+		else:
+			self.timeLeft -= 1
+			self.timeLbl.setText(self.timeStr())
+
+	def timeStr(self):
+		h = self.timeLeft // 3600
+		m = self.timeLeft % 3600 // 60
+		s = self.timeLeft % 3600 % 60
+		return f'{m:02}:{s:02}'
+
+if __name__ == '__main__':
+	app = QApplication(sys.argv)
+	ex = Simple()
+	sys.exit(app.exec_())

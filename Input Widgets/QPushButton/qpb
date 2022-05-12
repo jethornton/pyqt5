@@ -1,0 +1,49 @@
+#!/usr/bin/python3
+
+import sys
+from PyQt5.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, 
+	QApplication, QPushButton)
+
+
+class MainWindow(QMainWindow): 
+	def __init__(self, buttons):
+		super().__init__()
+
+		# a QMainWindow has a layout so you need to create a
+		# central widget and set the layout to it.
+		self.centralwidget = QWidget()
+		self.setCentralWidget(self.centralwidget)
+		self.layout = QVBoxLayout(self.centralwidget)
+
+		for i in range(buttons):
+			self.btn = QPushButton(f'Button {i + 1}', self)            
+			text = self.btn.text()
+			self.btn.clicked.connect(lambda ch, text=text : print(f'clicked--> {text}'))
+			self.layout.addWidget(self.btn)
+
+		self.numButton = 4
+
+		newButtonPB = QPushButton('Create a button', self)
+		newButtonPB.clicked.connect(self.insertButton)
+		self.layout.addWidget(newButtonPB)
+
+		byeButtonPB = QPushButton('Quit', self)
+		byeButtonPB.clicked.connect(self.close)
+		self.layout.addWidget(byeButtonPB)
+
+		self.layout.addStretch(1)
+		self.show()
+
+
+	def insertButton(self):
+		newButtonPB = QPushButton(f'New Button{self.numButton}', self)
+		self.numButton += 1
+		newButtonPB.clicked.connect(lambda : print(f'clicked===>> {newButtonPB.text()}'))
+		# insert the widget above the two bottom buttons
+		self.layout.insertWidget(self.layout.count() - 3, newButtonPB)
+
+
+if __name__ == "__main__":
+	app = QApplication(sys.argv)
+	mainWin = MainWindow(3) # send 3 to the init
+	sys.exit( app.exec_() )

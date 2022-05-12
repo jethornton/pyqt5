@@ -1,0 +1,1142 @@
+https://doc.qt.io/qt-5/qtcore-module.html
+
+Namespaces
+
+QColorConstants
+	
+
+Contains QColor predefined constants
+Classes
+
+QAbstractOpenGLFunctions
+	
+
+The base class of a family of classes that expose all functions for each OpenGL version and profile
+
+QAbstractTextDocumentLayout
+	
+
+Abstract base class used to implement custom layouts for QTextDocuments
+
+QAbstractTextDocumentLayout::PaintContext
+	
+
+QAbstractTextDocumentLayout::PaintContext class is a convenience class defining the parameters used when painting a document's layout
+
+QAbstractTextDocumentLayout::Selection
+	
+
+QAbstractTextDocumentLayout::Selection class is a convenience class defining the parameters of a selection
+
+QAccessible
+	
+
+Enums and static functions related to accessibility
+
+QAccessible::State
+
+QAccessibleEditableTextInterface
+	
+
+Implements support for objects with editable text
+
+QAccessibleEvent
+	
+
+The base class for accessibility notifications
+
+QAccessibleInterface
+	
+
+Defines an interface that exposes information about accessible objects
+
+QAccessibleObject
+	
+
+Implements parts of the QAccessibleInterface for QObjects
+
+QAccessibleStateChangeEvent
+	
+
+Notfies the accessibility framework that the state of an object has changed
+
+QAccessibleTableCellInterface
+	
+
+Implements support for the IAccessibleTable2 Cell interface
+
+QAccessibleTableModelChangeEvent
+	
+
+Signifies a change in a table, list, or tree where cells are added or removed. If the change affected a number of rows, firstColumn and lastColumn will return -1. Likewise for columns, the row functions may return -1
+
+QAccessibleTextCursorEvent
+	
+
+Notifies of cursor movements
+
+QAccessibleTextInsertEvent
+	
+
+Notifies of text being inserted
+
+QAccessibleTextInterface
+	
+
+Implements support for text handling
+
+QAccessibleTextRemoveEvent
+	
+
+Notifies of text being deleted
+
+QAccessibleTextSelectionEvent
+	
+
+Signals a change in the text selection of an object
+
+QAccessibleTextUpdateEvent
+	
+
+Notifies about text changes. This is for accessibles that support editable text such as line edits. This event occurs for example when a portion of selected text gets replaced by pasting a new text or in override mode of editors
+
+QAccessibleValueChangeEvent
+	
+
+Describes a change in value for an accessible object
+
+QAccessibleValueInterface
+	
+
+Implements support for objects that manipulate a value
+
+QActionEvent
+	
+
+Event that is generated when a QAction is added, removed, or changed
+
+QBackingStore
+	
+
+Drawing area for QWindow
+
+QBitmap
+	
+
+Monochrome (1-bit depth) pixmaps
+
+QBrush
+	
+
+Defines the fill pattern of shapes drawn by QPainter
+
+QClipboard
+	
+
+Access to the window system clipboard
+
+QCloseEvent
+	
+
+Contains parameters that describe a close event
+
+QColor
+	
+
+Colors based on RGB, HSV or CMYK values
+
+QColorSpace
+	
+
+Color space abstraction
+
+QColorTransform
+	
+
+Transformation between color spaces
+
+QConicalGradient
+	
+
+Used in combination with QBrush to specify a conical gradient brush
+
+QContextMenuEvent
+	
+
+Contains parameters that describe a context menu event
+
+QCursor
+	
+
+Mouse cursor with an arbitrary shape
+
+QDesktopServices
+	
+
+Methods for accessing common desktop services
+
+QDoubleValidator
+	
+
+Range checking of floating-point numbers
+
+QDrag
+	
+
+Support for MIME-based drag and drop data transfer
+
+QDragEnterEvent
+	
+
+Event which is sent to a widget when a drag and drop action enters it
+
+QDragLeaveEvent
+	
+
+Event that is sent to a widget when a drag and drop action leaves it
+
+QDragMoveEvent
+	
+
+Event which is sent while a drag and drop action is in progress
+
+QDropEvent
+	
+
+Event which is sent when a drag and drop action is completed
+
+QEnterEvent
+	
+
+Contains parameters that describe an enter event
+
+QExposeEvent
+	
+
+Contains event parameters for expose events
+
+QFileOpenEvent
+	
+
+Event that will be sent when there is a request to open a file or a URL
+
+QFocusEvent
+	
+
+Contains event parameters for widget focus events
+
+QFont
+	
+
+Specifies a query for a font used for drawing text
+
+QFontDatabase
+	
+
+Information about the fonts available in the underlying window system
+
+QFontInfo
+	
+
+General information about fonts
+
+QFontMetrics
+	
+
+Font metrics information
+
+QFontMetricsF
+	
+
+Font metrics information
+
+QGenericMatrix
+	
+
+Template class that represents a NxM transformation matrix with N columns and M rows
+
+QGenericPlugin
+	
+
+Abstract base class for plugins
+
+QGenericPluginFactory
+	
+
+Creates plugin drivers
+
+QGlyphRun
+	
+
+Direct access to the internal glyphs in a font
+
+QGradient
+	
+
+Used in combination with QBrush to specify gradient fills
+
+QGuiApplication
+	
+
+Manages the GUI application's control flow and main settings
+
+QHelpEvent
+	
+
+Event that is used to request helpful information about a particular point in a widget
+
+QHideEvent
+	
+
+Event which is sent after a widget is hidden
+
+QHoverEvent
+	
+
+Contains parameters that describe a mouse event
+
+QIcon
+	
+
+Scalable icons in different modes and states
+
+QIconDragEvent
+	
+
+Indicates that a main icon drag has begun
+
+QIconEngine
+	
+
+Abstract base class for QIcon renderers
+
+QIconEngine::AvailableSizesArgument
+
+QIconEngine::ScaledPixmapArgument
+
+QIconEnginePlugin
+	
+
+Abstract base for custom QIconEngine plugins
+
+QImage
+	
+
+Hardware-independent image representation that allows direct access to the pixel data, and can be used as a paint device
+
+QImageIOHandler
+	
+
+Defines the common image I/O interface for all image formats in Qt
+
+QImageIOPlugin
+	
+
+Defines an interface for writing an image format plugin
+
+QImageReader
+	
+
+Format independent interface for reading images from files or other devices
+
+QImageWriter
+	
+
+Format independent interface for writing images to files or other devices
+
+QInputEvent
+	
+
+The base class for events that describe user input
+
+QInputMethod
+	
+
+Access to the active text input method
+
+QInputMethodEvent
+	
+
+Parameters for input method events
+
+QInputMethodEvent::Attribute
+	
+
+QInputMethodEvent::Attribute class stores an input method attribute
+
+QInputMethodQueryEvent
+	
+
+Event sent by the input context to input objects
+
+QIntValidator
+	
+
+Validator that ensures a string contains a valid integer within a specified range
+
+QKeyEvent
+	
+
+Describes a key event
+
+QKeySequence
+	
+
+Encapsulates a key sequence as used by shortcuts
+
+QLinearGradient
+	
+
+Used in combination with QBrush to specify a linear gradient brush
+
+QMatrix4x4
+	
+
+Represents a 4x4 transformation matrix in 3D space
+
+QMouseEvent
+	
+
+Contains parameters that describe a mouse event
+
+QMoveEvent
+	
+
+Contains event parameters for move events
+
+QMovie
+	
+
+Convenience class for playing movies with QImageReader
+
+QNativeGestureEvent
+	
+
+Contains parameters that describe a gesture event
+
+QOffscreenSurface
+	
+
+Represents an offscreen surface in the underlying platform
+
+QOpenGLBuffer
+	
+
+Functions for creating and managing OpenGL buffer objects
+
+QOpenGLContext
+	
+
+Represents a native OpenGL context, enabling OpenGL rendering on a QSurface
+
+QOpenGLContextGroup
+	
+
+Represents a group of contexts sharing OpenGL resources
+
+QOpenGLDebugLogger
+	
+
+Enables logging of OpenGL debugging messages
+
+QOpenGLDebugMessage
+	
+
+Wraps an OpenGL debug message
+
+QOpenGLExtraFunctions
+	
+
+Cross-platform access to the OpenGL ES 3.0, 3.1 and 3.2 API
+
+QOpenGLFramebufferObject
+	
+
+Encapsulates an OpenGL framebuffer object
+
+QOpenGLFramebufferObjectFormat
+	
+
+Specifies the format of an OpenGL framebuffer object
+
+QOpenGLFunctions
+	
+
+Cross-platform access to the OpenGL ES 2.0 API
+
+QOpenGLFunctions_1_0
+	
+
+All functions for OpenGL 1.0 specification
+
+QOpenGLFunctions_1_1
+	
+
+All functions for OpenGL 1.1 specification
+
+QOpenGLFunctions_1_2
+	
+
+All functions for OpenGL 1.2 specification
+
+QOpenGLFunctions_1_3
+	
+
+All functions for OpenGL 1.3 specification
+
+QOpenGLFunctions_1_4
+	
+
+All functions for OpenGL 1.4 specification
+
+QOpenGLFunctions_1_5
+	
+
+All functions for OpenGL 1.5 specification
+
+QOpenGLFunctions_2_0
+	
+
+All functions for OpenGL 2.0 specification
+
+QOpenGLFunctions_2_1
+	
+
+All functions for OpenGL 2.1 specification
+
+QOpenGLFunctions_3_0
+	
+
+All functions for OpenGL 3.0 specification
+
+QOpenGLFunctions_3_1
+	
+
+All functions for OpenGL 3.1 specification
+
+QOpenGLFunctions_3_2_Compatibility
+	
+
+All functions for OpenGL 3.2 compatibility profile
+
+QOpenGLFunctions_3_2_Core
+	
+
+All functions for OpenGL 3.2 core profile
+
+QOpenGLFunctions_3_3_Compatibility
+	
+
+All functions for OpenGL 3.3 compatibility profile
+
+QOpenGLFunctions_3_3_Core
+	
+
+All functions for OpenGL 3.3 core profile
+
+QOpenGLFunctions_4_0_Compatibility
+	
+
+All functions for OpenGL 4.0 compatibility profile
+
+QOpenGLFunctions_4_0_Core
+	
+
+All functions for OpenGL 4.0 core profile
+
+QOpenGLFunctions_4_1_Compatibility
+	
+
+All functions for OpenGL 4.1 compatibility profile
+
+QOpenGLFunctions_4_1_Core
+	
+
+All functions for OpenGL 4.1 core profile
+
+QOpenGLFunctions_4_2_Compatibility
+	
+
+All functions for OpenGL 4.2 compatibility profile
+
+QOpenGLFunctions_4_2_Core
+	
+
+All functions for OpenGL 4.2 core profile
+
+QOpenGLFunctions_4_3_Compatibility
+	
+
+All functions for OpenGL 4.3 compatibility profile
+
+QOpenGLFunctions_4_3_Core
+	
+
+All functions for OpenGL 4.3 core profile
+
+QOpenGLFunctions_4_4_Compatibility
+	
+
+All functions for OpenGL 4.4 compatibility profile
+
+QOpenGLFunctions_4_4_Core
+	
+
+All functions for OpenGL 4.4 core profile
+
+QOpenGLFunctions_4_5_Compatibility
+	
+
+All functions for OpenGL 4.5 compatibility profile
+
+QOpenGLFunctions_4_5_Core
+	
+
+All functions for OpenGL 4.5 core profile
+
+QOpenGLFunctions_ES2
+	
+
+All functions for OpenGL ES 2
+
+QOpenGLPaintDevice
+	
+
+Enables painting to an OpenGL context using QPainter
+
+QOpenGLShader
+	
+
+Allows OpenGL shaders to be compiled
+
+QOpenGLShaderProgram
+	
+
+Allows OpenGL shader programs to be linked and used
+
+QOpenGLTexture
+	
+
+Encapsulates an OpenGL texture object
+
+QOpenGLTextureBlitter
+	
+
+Convenient way to draw textured quads via OpenGL
+
+QOpenGLTimeMonitor
+	
+
+Wraps a sequence of OpenGL timer query objects
+
+QOpenGLTimerQuery
+	
+
+Wraps an OpenGL timer query object
+
+QOpenGLVersionProfile
+	
+
+Represents the version and if applicable the profile of an OpenGL context
+
+QOpenGLVertexArrayObject
+	
+
+Wraps an OpenGL Vertex Array Object
+
+QOpenGLVertexArrayObject::Binder
+	
+
+QOpenGLVertexArrayObject::Binder class is a convenience class to help with the binding and releasing of OpenGL Vertex Array Objects
+
+QOpenGLWindow
+	
+
+Convenience subclass of QWindow to perform OpenGL painting
+
+QPageLayout
+	
+
+Describes the size, orientation and margins of a page
+
+QPageSize
+	
+
+Describes the size and name of a defined page size
+
+QPagedPaintDevice
+	
+
+Represents a paint device that supports multiple pages
+
+QPaintDevice
+	
+
+The base class of objects that can be painted on with QPainter
+
+QPaintDeviceWindow
+	
+
+Convenience subclass of QWindow that is also a QPaintDevice
+
+QPaintEngine
+	
+
+Abstract definition of how QPainter draws to a given device on a given platform
+
+QPaintEngineState
+	
+
+Information about the active paint engine's current state
+
+QPaintEvent
+	
+
+Contains event parameters for paint events
+
+QPainter
+	
+
+Performs low-level painting on widgets and other paint devices
+
+QPainter::PixmapFragment
+	
+
+This class is used in conjunction with the QPainter::drawPixmapFragments() function to specify how a pixmap, or sub-rect of a pixmap, is drawn
+
+QPainterPath
+	
+
+Container for painting operations, enabling graphical shapes to be constructed and reused
+
+QPainterPath::Element
+	
+
+QPainterPath::Element class specifies the position and type of a subpath
+
+QPainterPathStroker
+	
+
+Used to generate fillable outlines for a given painter path
+
+QPalette
+	
+
+Contains color groups for each widget state
+
+QPdfWriter
+	
+
+Class to generate PDFs that can be used as a paint device
+
+QPen
+	
+
+Defines how a QPainter should draw lines and outlines of shapes
+
+QPicture
+	
+
+Paint device that records and replays QPainter commands
+
+QPixelFormat
+	
+
+Class for describing different pixel layouts in graphics buffers
+
+QPixmap
+	
+
+Off-screen image representation that can be used as a paint device
+
+QPixmapCache
+	
+
+Application-wide cache for pixmaps
+
+QPixmapCache::Key
+	
+
+QPixmapCache::Key class can be used for efficient access to the QPixmapCache
+
+QPlatformSurfaceEvent
+	
+
+Used to notify about native platform surface events
+
+QPointingDeviceUniqueId
+	
+
+Identifies a unique object, such as a tagged token or stylus, which is used with a pointing device
+
+QPolygon
+	
+
+Vector of points using integer precision
+
+QPolygonF
+	
+
+Vector of points using floating point precision
+
+QQuaternion
+	
+
+Represents a quaternion consisting of a vector and scalar
+
+QRadialGradient
+	
+
+Used in combination with QBrush to specify a radial gradient brush
+
+QRasterPaintEngine
+	
+
+Enables hardware acceleration of painting operations in Qt for Embedded Linux
+
+QRasterWindow
+	
+
+Convenience class for using QPainter on a QWindow
+
+QRawFont
+	
+
+Access to a single physical instance of a font
+
+QRegExpValidator
+	
+
+Used to check a string against a regular expression
+
+QRegion
+	
+
+Specifies a clip region for a painter
+
+QResizeEvent
+	
+
+Contains event parameters for resize events
+
+QRgba64
+	
+
+Struct contains a 64-bit RGB color
+
+QScreen
+	
+
+Used to query screen properties
+
+QScrollEvent
+	
+
+Sent when scrolling
+
+QScrollPrepareEvent
+	
+
+Sent in preparation of scrolling
+
+QSessionManager
+	
+
+Access to the session manager
+
+QShortcutEvent
+	
+
+Event which is generated when the user presses a key combination
+
+QShowEvent
+	
+
+Event that is sent when a widget is shown
+
+QStandardItem
+	
+
+Item for use with the QStandardItemModel class
+
+QStandardItemModel
+	
+
+Generic model for storing custom data
+
+QStaticText
+	
+
+Enables optimized drawing of text when the text and its layout is updated rarely
+
+QStatusTipEvent
+	
+
+Event that is used to show messages in a status bar
+
+QStyleHints
+	
+
+Contains platform specific hints and settings
+
+QSupportedWritingSystems
+	
+
+Used when registering fonts with the internal Qt fontdatabase
+
+QSurface
+	
+
+Abstraction of renderable surfaces in Qt
+
+QSurfaceFormat
+	
+
+Represents the format of a QSurface
+
+QSyntaxHighlighter
+	
+
+Allows you to define syntax highlighting rules, and in addition you can use the class to query a document's current formatting or user data
+
+QTabletEvent
+	
+
+Contains parameters that describe a Tablet event
+
+QTextBlock
+	
+
+Container for text fragments in a QTextDocument
+
+QTextBlock::iterator
+	
+
+QTextBlock::iterator class provides an iterator for reading the contents of a QTextBlock
+
+QTextBlockFormat
+	
+
+Formatting information for blocks of text in a QTextDocument
+
+QTextBlockGroup
+	
+
+Container for text blocks within a QTextDocument
+
+QTextBlockUserData
+	
+
+Used to associate custom data with blocks of text
+
+QTextCharFormat
+	
+
+Formatting information for characters in a QTextDocument
+
+QTextCursor
+	
+
+Offers an API to access and modify QTextDocuments
+
+QTextDocument
+	
+
+Holds formatted text
+
+QTextDocumentFragment
+	
+
+Represents a piece of formatted text from a QTextDocument
+
+QTextDocumentWriter
+	
+
+Format-independent interface for writing a QTextDocument to files or other devices
+
+QTextFormat
+	
+
+Formatting information for a QTextDocument
+
+QTextFragment
+	
+
+Holds a piece of text in a QTextDocument with a single QTextCharFormat
+
+QTextFrame
+	
+
+Represents a frame in a QTextDocument
+
+QTextFrameFormat
+	
+
+Formatting information for frames in a QTextDocument
+
+QTextImageFormat
+	
+
+Formatting information for images in a QTextDocument
+
+QTextInlineObject
+	
+
+Represents an inline object in a QAbstractTextDocumentLayout and its implementations
+
+QTextItem
+	
+
+All the information required to draw text in a custom paint engine
+
+QTextLayout
+	
+
+Used to lay out and render text
+
+QTextLayout::FormatRange
+	
+
+QTextLayout::FormatRange structure is used to apply extra formatting information for a specified area in the text layout's content
+
+QTextLength
+	
+
+Encapsulates the different types of length used in a QTextDocument
+
+QTextLine
+	
+
+Represents a line of text inside a QTextLayout
+
+QTextList
+	
+
+Decorated list of items in a QTextDocument
+
+QTextListFormat
+	
+
+Formatting information for lists in a QTextDocument
+
+QTextObject
+	
+
+Base class for different kinds of objects that can group parts of a QTextDocument together
+
+QTextObjectInterface
+	
+
+Allows drawing of custom text objects in QTextDocuments
+
+QTextOption
+	
+
+Description of general rich text properties
+
+QTextOption::Tab
+
+QTextTable
+	
+
+Represents a table in a QTextDocument
+
+QTextTableCell
+	
+
+Represents the properties of a cell in a QTextTable
+
+QTextTableCellFormat
+	
+
+Formatting information for table cells in a QTextDocument
+
+QTextTableFormat
+	
+
+Formatting information for tables in a QTextDocument
+
+QTouchDevice
+	
+
+Describes the device from which touch events originate
+
+QTouchEvent
+	
+
+Contains parameters that describe a touch event
+
+QTouchEvent::TouchPoint
+	
+
+Information about a touch point in a QTouchEvent
+
+QTransform
+	
+
+Specifies 2D transformations of a coordinate system
+
+QValidator
+	
+
+Validation of input text
+
+QVector2D
+	
+
+Represents a vector or vertex in 2D space
+
+QVector3D
+	
+
+Represents a vector or vertex in 3D space
+
+QVector4D
+	
+
+Represents a vector or vertex in 4D space
+
+QVulkanDeviceFunctions
+	
+
+Cross-platform access to the device level core Vulkan 1.0 API
+
+QVulkanFunctions
+	
+
+Cross-platform access to the instance level core Vulkan 1.0 API
+
+QVulkanInstance
+	
+
+Represents a native Vulkan instance, enabling Vulkan rendering onto a QSurface
+
+QVulkanWindow
+	
+
+Convenience subclass of QWindow to perform Vulkan rendering
+
+QVulkanWindowRenderer
+	
+
+Used to implement the application-specific rendering logic for a QVulkanWindow
+
+QWhatsThisClickedEvent
+	
+
+Event that can be used to handle hyperlinks in a "What's This?" text
+
+QWheelEvent
+	
+
+Contains parameters that describe a wheel event
+
+QWindow
+	
+
+Represents a window in the underlying windowing system
+
+QWindowStateChangeEvent
+	
+
+The window state before a window state change

@@ -1,0 +1,46 @@
+#!/usr/bin/python3
+
+"""
+Minimal file to load a Qt Designer generated ui file.
+The .ui file must be in the same directory as this file.
+"""
+
+import sys, os
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5 import QtCore, QtWidgets
+from translate_ui import Ui_MainWindow
+
+
+class main(QMainWindow):
+	def __init__(self):
+		super().__init__()
+		#uic.loadUi(os.path.join(os. getcwd(), 'loadui.ui'), self)
+		#self.setGeometry(50, 50, 500, 300)
+
+		self.ui = Ui_MainWindow()
+		self.ui.setupUi(self)
+		self.setWindowTitle("PyQT5 Translation!")
+		self.setGeometry(50, 50, 500, 300)
+		self.ui.actionEnglish.triggered.connect(self.trans)
+		self.ui.actionGerman.triggered.connect(self.trans)
+		self.trans = QtCore.QTranslator(self)
+		self.show()
+		self.ui.retranslateUi(self)
+
+	def trans(self):
+		#print(self.sender().objectName())
+		#print(self.sender().text())
+		if self.sender().text() == 'English': # this is going to break!
+			QtWidgets.QApplication.instance().removeTranslator(self.trans)
+		if self.sender().text() == 'German':
+			data = 'eng-de'
+			self.trans.load(data)
+			QtWidgets.QApplication.instance().installTranslator(self.trans)
+			self.ui.retranslateUi(self)
+
+
+
+if __name__ == '__main__':
+	app = QApplication(sys.argv)
+	gui = main()
+	sys.exit(app.exec_())

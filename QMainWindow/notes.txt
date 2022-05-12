@@ -1,0 +1,3 @@
+Too keep a QMainWindow on top set this flag
+self.setWindowFlags(Qt.WindowStaysOnTopHint)
+
