@@ -1,0 +1,51 @@
+#!/usr/bin/python3
+
+"""
+Minimal file to load a Qt Designer generated ui file.
+The .ui file must be in the same directory as this file.
+"""
+
+import sys, os
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5 import uic
+
+
+class main(QMainWindow):
+	def __init__(self):
+		super().__init__()
+		uic.loadUi(os.path.join(os. getcwd(), 'tabwidget1.ui'), self)
+		self.setGeometry(50, 50, 500, 300)
+		self.setWindowTitle("PyQT5 QTabWidget")
+		self.setup()
+		self.show()
+
+	def setup(self):
+		self.pushButton_1.clicked.connect(self.pb1)
+		self.pushButton_2.clicked.connect(self.pb2)
+		self.pushButton_3.clicked.connect(self.pb3)
+		self.pushButton_4.clicked.connect(self.pb4)
+		self.pushButton_5.clicked.connect(self.pb5)
+		self.pushButton_6.clicked.connect(self.pb6)
+
+	def pb1(self):
+		self.tabWidget.setTabVisible(1, False)
+
+	def pb2(self):
+		self.tabWidget.setTabVisible(1, True)
+
+	def pb3(self):
+		print(self.tabWidget.isTabVisible(1))
+
+	def pb4(self):
+		self.tabWidget_2.setTabVisible(1, False)
+
+	def pb5(self):
+		self.tabWidget_2.setTabVisible(1, True)
+
+	def pb6(self):
+		print(self.tabWidget_2.isTabVisible(1))
+
+if __name__ == '__main__':
+	app = QApplication(sys.argv)
+	gui = main()
+	sys.exit(app.exec_())
