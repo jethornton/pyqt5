@@ -4,7 +4,6 @@ import sys
 from PyQt5.QtWidgets import QMainWindow, QTextEdit, QAction, QApplication
 from PyQt5.QtGui import QIcon
 
-
 class MainWindow(QMainWindow):
 
 	def __init__(self):

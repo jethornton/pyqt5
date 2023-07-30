@@ -1,15 +1,16 @@
 
 setIcon()
 
-Displays predefined icon corresponding to severity of the message
+Displays predefined icon corresponding to type of the message
 
-Question Question
+NoIcon	0	the message box does not have any icon.
+Question	4	an icon indicating that the message is asking a question.
+Information	1	an icon indicating that the message is nothing out of the ordinary.
+Warning	2	an icon indicating that the message is a warning, but can be dealt with.
+Critical	3	an icon indicating that the message represents a critical problem.
 
-Information Information
+msgBox.setIcon(QMessageBox.Question)
 
-Warning Warning
-
-Critical Critical
 
 setText()
 
