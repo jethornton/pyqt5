@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+
+"""
+Minimal file to load a Qt Designer generated ui file.
+The .ui file must be in the same directory as this file.
+"""
+
+import sys, os
+from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QLabel
+from PyQt5 import uic
+from PyQt5.QtCore import pyqtSignal
+
+class Label(QLabel):
+	clicked = pyqtSignal()
+	def __init__(self, parent=None):
+		QLabel.__init__(self, parent=parent)
+
+	def mousePressEvent(self, event):
+		self.clicked.emit()
+
+class numbers(QDialog):
+	def __init__(self):
+		super().__init__()
+		uic.loadUi(os.path.join(os. getcwd(), 'numpad.ui'), self)
+
+class main(QMainWindow):
+	def __init__(self):
+		super().__init__()
+		uic.loadUi(os.path.join(os. getcwd(), 'loadui.ui'), self)
+		self.setGeometry(50, 50, 500, 300)
+		self.setWindowTitle("PyQT5 Minimal!")
+		self.open_pb.clicked.connect(self.numpad)
+		self.label_0.clicked.connect(self.numpad)
+		self.show()
+
+	def numpad(self):
+		print('numpad')
+		num = numbers()
+		num.exec_()
+
+
+app = QApplication(sys.argv)
+gui = main()
+sys.exit(app.exec_())
