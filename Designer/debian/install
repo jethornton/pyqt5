@@ -1,0 +1,5 @@
+des/src/libdes/des_plugin.py usr/lib/x86_64-linux-gnu/qt5/plugins/designer/python
+des/src/libdes/widgets/*.py usr/lib/python3/dist-packages/libdes/widgets
+des/src/libdes/python/*.py usr/lib/python3/dist-packages/libdes/python
+
+

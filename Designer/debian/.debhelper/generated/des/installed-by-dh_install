@@ -1,0 +1,3 @@
+./des/src/libdes/des_plugin.py
+./des/src/libdes/widgets/analogclock.py
+./des/src/libdes/python/analogclockplugin.py
