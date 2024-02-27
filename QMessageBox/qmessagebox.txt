@@ -37,7 +37,7 @@ QMessageBox::Open	0x00002000	An "Open" button defined with the AcceptRole.
 QMessageBox::Save	0x00000800	A "Save" button defined with the AcceptRole.
 QMessageBox::Cancel	0x00400000	A "Cancel" button defined with the RejectRole.
 QMessageBox::Close	0x00200000	A "Close" button defined with the RejectRole.
-QMessageBox::Discard	0x00800000	A "Discard" or "Don't Save" button, depending on the platform, defined with the DestructiveRole.
+QMessageBox::Discard	0x00800000	A "Discard" or "Don't Save" button defined with the DestructiveRole.
 QMessageBox::Apply	0x02000000	An "Apply" button defined with the ApplyRole.
 QMessageBox::Reset	0x04000000	A "Reset" button defined with the ResetRole.
 QMessageBox::RestoreDefaults	0x08000000	A "Restore Defaults" button defined with the ResetRole.

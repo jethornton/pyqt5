@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 import sys
-from PyQt5.QtCore import Qt
-#from PyQt5.QtGui import *
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QDialog
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 
 def window():
 	app = QApplication(sys.argv)

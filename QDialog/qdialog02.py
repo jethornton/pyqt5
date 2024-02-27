@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #!/usr/bin/env python3
-./
+
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QMessageBox
 from PyQt5.QtGui import QIcon

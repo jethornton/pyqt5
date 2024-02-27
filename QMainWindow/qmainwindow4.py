@@ -8,8 +8,8 @@ class mainwindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		# left, top, width, height
-		self.setGeometry(10, 10, 300, 150)
-		self.setWindowTitle('Simple Main Window')
+		#self.setGeometry(10, 10, 300, 150)
+		#self.setWindowTitle('Simple Main Window')
 		self.central_widget = QWidget(self)
 		self.setCentralWidget(self.central_widget)
 

@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-# QcodeEditor.py by acbetter.
-# -*- coding: utf-8 -*-
 
 from PyQt5.QtCore import Qt, QRect, QSize
 from PyQt5.QtWidgets import QWidget, QPlainTextEdit, QTextEdit
 from PyQt5.QtGui import QColor, QPainter, QTextFormat
-
 
 class QLineNumberArea(QWidget):
 	def __init__(self, editor):

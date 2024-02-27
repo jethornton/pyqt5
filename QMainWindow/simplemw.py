@@ -2,33 +2,55 @@
 
 import sys
 
-from PyQt5.QtCore import QSize, Qt
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QLabel
-from PyQt5.QtWidgets import QGridLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QLineEdit
+from PyQt5.QtWidgets import QPushButton, QVBoxLayout, QSpinBox, QAbstractSpinBox
+from PyQt5.QtGui import  QIntValidator
+from PyQt5.QtCore import QLocale, Qt
 
-# Subclass QMainWindow to customize your application's main window
 class MainWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 
 		self.setWindowTitle("Simple Main Window")
-		#button = QPushButton("Press Me!")
+		button = QPushButton("Press Me!")
 
-		# Set the central widget of the Window.
 		self.cw = QWidget()
 		self.setCentralWidget(self.cw)
 
-		layout = QGridLayout()
+		layout = QVBoxLayout()
 		self.cw.setLayout(layout)
 
-		self.label_1 = QLabel('Simple Window')
-		layout.addWidget(self.label_1, 0, 0)
-		self.label_2 = QLabel('Another Label')
-		self.label_2.setAlignment(Qt.AlignHCenter)
-		layout.addWidget(self.label_2, 1, 0)
+		only_int = QIntValidator()
+		c_locale = QLocale(QLocale.C)
+		only_int.setLocale(c_locale)
+
+		self.num_le = QLineEdit()
+		layout.addWidget(self.num_le)
+		self.num_le.setValidator(only_int)
+
+		self.button = QPushButton("Press Me!")
+		layout.addWidget(self.button)
+		self.button.clicked.connect(self.calc)
+
+		self.spin = QSpinBox()
+		self.spin.setButtonSymbols(QAbstractSpinBox.NoButtons)
+		self.spin.setAlignment(Qt.AlignRight)
+		layout.addWidget(self.spin)
+
+		self.show()
+
+	def focusInEvent(self, event):
+		print('x')
+		already_select_all = self.text() == self.selectedText()
+		super().mousePressEvent(event)
+		if not already_select_all:
+			self.selectAll()
+
+
+	def calc(self):
+		print(int(self.num_le.text()))
 
 app = QApplication(sys.argv)
 window = MainWindow()
-window.show()
 app.exec()
 

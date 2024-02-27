@@ -10,18 +10,21 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QLabel
 from PyQt5 import uic
 from PyQt5.QtCore import pyqtSignal
 
-class Label(QLabel):
-	clicked = pyqtSignal()
-	def __init__(self, parent=None):
-		QLabel.__init__(self, parent=parent)
-
-	def mousePressEvent(self, event):
-		self.clicked.emit()
-
 class numbers(QDialog):
 	def __init__(self):
 		super().__init__()
 		uic.loadUi(os.path.join(os. getcwd(), 'numpad.ui'), self)
+		self.buttonBox.accepted.connect(self.accept)
+		self.buttonBox.rejected.connect(self.reject)
+
+	def accept(self):
+		self.done(1)
+
+	def retval(self):
+		return(123)
+
+	def reject(self):
+		self.done(0)
 
 class main(QMainWindow):
 	def __init__(self):
@@ -30,13 +33,15 @@ class main(QMainWindow):
 		self.setGeometry(50, 50, 500, 300)
 		self.setWindowTitle("PyQT5 Minimal!")
 		self.open_pb.clicked.connect(self.numpad)
-		self.label_0.clicked.connect(self.numpad)
+		#self.label_0.clicked.connect(self.numpad)
 		self.show()
 
 	def numpad(self):
-		print('numpad')
+		#print('numpad')
 		num = numbers()
-		num.exec_()
+		retval = num.exec_()
+		print(num.retval())
+		#print(retval)
 
 
 app = QApplication(sys.argv)

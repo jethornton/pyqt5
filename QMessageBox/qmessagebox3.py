@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+# BROKEN
+
 class MainWindow:
 	def __init__(self):
 
