@@ -1,0 +1,37 @@
+#!/usr/bin/python3
+
+"""
+Minimal file to load a Qt Designer generated ui file.
+The .ui file must be in the same directory as this file.
+"""
+
+import sys, os
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5 import uic
+
+
+class main(QMainWindow):
+	def __init__(self):
+		super().__init__()
+
+		if os.path.split(sys.argv[0])[0] == '/usr/bin':
+			self.lib_path = '/usr/lib/libdes'
+			#self.docs_path = '/usr/share/doc/libdes'
+			#self.installed = True
+			uic.loadUi(os.path.join(self.lib_path, 'test.ui'), self)
+		else:
+			srcPath = os.path.split(os.path.realpath(sys.argv[0]))[0]
+			self.lib_path = os.path.join(srcPath, 'libmesact')
+			#self.docs_path = srcPath
+			#self.installed = False
+			uic.loadUi(os.path.join(srcPath, 'test.ui'), self)
+
+		#uic.loadUi(os.path.join(os. getcwd(), 'test.ui'), self)
+		self.setGeometry(50, 50, 500, 300)
+		self.setWindowTitle("PyQT5 Minimal!")
+		self.show()
+
+if __name__ == '__main__':
+	app = QApplication(sys.argv)
+	gui = main()
+	sys.exit(app.exec_())

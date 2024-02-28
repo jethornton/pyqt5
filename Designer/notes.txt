@@ -1,0 +1,41 @@
+ PyQt4.QtCore.pyqtProperty(type[, fget=None[, fset=None[, freset=None[, fdel=None[, doc=None[, designable=True[, scriptable=True[, stored=True[, user=False[, constant=False[, final=False[, notify=None]]]]]]]]]]]])
+
+    Create a property that behaves as both a Python property and a Qt property.
+    Parameters:	
+
+        type – the type of the property. It is either a Python type object or a string that is the name of a C++ type.
+        fget – the optional callable used to get the value of the property.
+        fset – the optional callable used to set the value of the property.
+        freset – the optional callable used to reset the value of the property to its default value. It is ignored by Python
+        fdel – the optional callable used to delete the property. It is ignored by Qt.
+        doc – the optional docstring of the property. It is ignored by Qt.
+        designable – optionally sets the Qt DESIGNABLE flag. It is ignored by Python
+        scriptable – optionally sets the Qt SCRIPTABLE flag. It is ignored by Python
+        stored – optionally sets the Qt STORED flag. It is ignored by Python
+        user – optionally sets the Qt USER flag. It is ignored by Python
+        constant – optionally sets the Qt CONSTANT flag. It is ignored by Python
+        final – optionally sets the Qt FINAL flag. It is ignored by Python
+        notify – the optional unbound notify signal. It is ignored by Python
+
+    Return type:	
+
+    the property object.
+
+
+from PyQt4.QtCore import QObject, pyqtProperty
+
+class Foo(QObject):
+
+    def __init__(self):
+        QObject.__init__(self)
+
+        self._total = 0
+
+    @pyqtProperty(int)
+    def total(self):
+        return self._total
+
+    @total.setter
+    def total(self, value):
+        self._total = value
+

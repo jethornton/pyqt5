@@ -8,6 +8,7 @@ from PyQt5.QtCore import pyqtProperty, QSize
 class PyNumberDisplay(QLabel):
 	def __init__(self, parent=None):
 		super(PyNumberDisplay, self).__init__(parent)
+		self.decimal_precision = 0
 		self.sometogglething = False
 		self.somecountthing = 0
 		self.somefloatthing = 0.0
@@ -18,17 +19,26 @@ class PyNumberDisplay(QLabel):
 	def sizeHint(self):
 		return QSize(100, 25)
 
-	def get_toggle(self):
+	def get_precision(self):
+		return self.decimal_precision
+
+	def set_precision(self, data):
+		# Sometime Validation is good here
+		self.decimal_precision = data
+
+	precision = pyqtProperty(int, get_precision, set_precision)
+
+	def read_toggle(self):
 		return self.sometogglething
 
-	def set_toggle(self, data):
+	def write_toggle(self, data):
 		# Sometime Validation is good here
 		self.sometoggletthing = data
 
 	# Important this goes after the functions.
 	# Why I have yet to figure out it shouldn't matter
 	# I really dislike inline defines like this personally
-	togglething = pyqtProperty(bool, get_toggle, set_toggle)
+	togglething = pyqtProperty(bool, read_toggle, write_toggle)
 
 	def get_counter(self):
 		return self.somecountthing
