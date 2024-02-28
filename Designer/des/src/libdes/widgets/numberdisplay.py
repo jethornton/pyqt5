@@ -1,9 +1,9 @@
 import os
 
 from PyQt5.QtWidgets import QApplication, QLabel
-# Need direct import, designer will occasionally throw errors if you use QtCore.pyqtProperty
-#   ... Still yet to figure out why...
-from PyQt5.QtCore import pyqtProperty
+# Need direct import, designer will occasionally throw errors if you use
+# QtCore.pyqtProperty still yet to figure out why...
+from PyQt5.QtCore import pyqtProperty, QSize
 
 class PyNumberDisplay(QLabel):
 	def __init__(self, parent=None):
@@ -11,6 +11,12 @@ class PyNumberDisplay(QLabel):
 		self.sometogglething = False
 		self.somecountthing = 0
 		self.somefloatthing = 0.0
+
+	def minimumSizeHint(self):
+		return QSize(50, 25)
+
+	def sizeHint(self):
+		return QSize(100, 25)
 
 	def get_toggle(self):
 		return self.sometogglething
@@ -20,10 +26,10 @@ class PyNumberDisplay(QLabel):
 		self.sometoggletthing = data
 
 	# Important this goes after the functions.
-	#   Why I have yet to figure out it shouldn't matter
-        #   I really dislike inline defines like this personally
-	sometogglething = pyqtProperty(int, get_toggle, set_toggle)
-	
+	# Why I have yet to figure out it shouldn't matter
+	# I really dislike inline defines like this personally
+	togglething = pyqtProperty(bool, get_toggle, set_toggle)
+
 	def get_counter(self):
 		return self.somecountthing
 
@@ -31,7 +37,7 @@ class PyNumberDisplay(QLabel):
 		# Sometime Validation is good here
 		self.somecountthing = data
 
-	somecountthing = pyqtProperty(int, get_counter, set_counter)
+	countthing = pyqtProperty(int, get_counter, set_counter)
 
 	def get_floater(self):
 		return self.somefloatthing
@@ -40,8 +46,7 @@ class PyNumberDisplay(QLabel):
 		# Sometime Validation is good here
 		self.somefloatthing = data
 
-	somefloatthing = pyqtProperty(int, get_floater, set_floater)
-
+	floatthing = pyqtProperty(float, get_floater, set_floater)
 
 if __name__ == "__main__":
 	import sys
